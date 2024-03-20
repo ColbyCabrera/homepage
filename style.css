@@ -91,14 +91,24 @@ img {
 .info-bar {
   display: flex;
   justify-content: space-between;
+  
 }
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  flex-basis: 58.4%;
+  padding-right: 3rem;
+  margin-right: 1rem;
+  margin-bottom: 2.4rem;
 }
 
 .footer-image {
-  flex-basis: 30%;
+  flex-basis: 40%;
+  flex-grow: 1;
 }
