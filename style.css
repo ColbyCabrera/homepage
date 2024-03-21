@@ -33,6 +33,7 @@ header {
   height: 100%;
   padding: 4rem 5vw;
   margin: 0 auto;
+  display: block;
 }
 
 .about-me {
@@ -68,7 +69,7 @@ header {
   padding: 0.8rem 3rem 2rem 2.4rem;
   padding-bottom: 2rem;
   background-color: antiquewhite;
-  flex-grow: 0.8;
+  flex-grow: 1;
 }
 
 img {
@@ -77,6 +78,24 @@ img {
   object-fit: cover;
 }
 
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+
+  }
+
+  .header-text {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+
+}
 
 /* PORTFOLIO */
 
@@ -91,7 +110,6 @@ img {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
- 
   gap: 2.4rem;
 }
 
@@ -129,6 +147,20 @@ img {
   height: 28px;
 }
 
+@media screen and (max-width: 950px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* FOOTER */
 
 footer {
@@ -148,6 +180,7 @@ footer {
   padding-right: 3rem;
   margin-right: 1rem;
   margin-bottom: 2.4rem;
+  flex-grow: 1;
 }
 
 .footer-text > div {
